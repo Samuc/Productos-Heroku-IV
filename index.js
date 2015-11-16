@@ -14,9 +14,8 @@ app.use(express.static(__dirname + '/public'));
 
 // Aniade un producto
 app.put('/producto/:nombre/:precio/:tipo', function( req, response ) {
-    var nuevo_producto = new producto.Producto(req.params.nombre,req.params.precio,
-				      req.params.tipo);
-    productos[nuevo_producto] = nuevo_producto;
+    var nuevo_producto = new producto.Producto(req.params.nombre,req.params.precio, req.params.tipo);
+    productos[nuevo_producto.nombre] = nuevo_producto;
     response.status(200).send( nuevo_producto );
 });
 
@@ -31,6 +30,16 @@ app.get('/productos', function(request, response) {
     response.send( productos );
 });
 
+
+app.get('/producto/:nombre', function(request, response) {
+    var este_producto = request.params.nombre;
+
+    if ( !productos[este_producto] ) {
+	response.status(404).send("No existe este producto");
+    } else {
+	response.status(200).send( productos[este_producto] );
+    }
+});
 
 
 // Escucha en un puerto determinado.

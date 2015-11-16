@@ -1,6 +1,6 @@
 {
   "name": "Productos-Heroku-IV",
-  "version": "0.1",
+  "version": "0.0.2",
   "description": "App para almacenar productos",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,9 @@
     "grunt-docco": "^0.4.0",
     "grunt-shell": "^1.1.2",
     "mocha": "^2.3.4",
-    "sqlite3": "^3.1.1"
+    "should": "^4.6.5",
+    "sqlite3": "^3.1.1",
+    "supertest": "^0.15.0"
   },
   "engines": {
     "node": "0.12.7"
