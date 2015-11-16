@@ -1,0 +1,32 @@
+{
+  "name": "Productos-Heroku-IV",
+  "version": "0.1",
+  "description": "App para almacenar productos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.3.3",
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-docco": "^0.4.0",
+    "grunt-shell": "^1.1.2",
+    "mocha": "^2.3.4",
+    "sqlite3": "^3.1.1"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Samuc/Productos-Heroku-IV"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

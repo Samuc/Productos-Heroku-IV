@@ -1,0 +1,8 @@
+{
+  "name": "Productos IV",
+  "description": "App para almacenar productos",
+  "repository": "https://github.com/Samuc/Productos-Heroku-IV",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
