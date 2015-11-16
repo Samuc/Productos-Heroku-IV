@@ -1,4 +1,4 @@
-# Productos-Heroku-IV
+# Productos-Heroku-IV [![Build Status](https://travis-ci.org/Samuc/Productos-Heroku-IV.svg)](https://travis-ci.org/Samuc/Productos-Heroku-IV)
 App para almacenar productos
 
 ## Tutorial
